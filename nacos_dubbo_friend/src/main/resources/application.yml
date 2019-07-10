@@ -1,0 +1,18 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: nacos-dubbo-friend
+  profiles:
+    active: dev
+
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848
+  application:
+    name: nacos-dubbo-consumer
+  scan:
+    base-packages: com.zfm.api.user
+  protocol:
+    name: dubbo
+    port: 20800
