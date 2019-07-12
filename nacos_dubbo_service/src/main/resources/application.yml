@@ -9,6 +9,8 @@ spring:
 dubbo:
   registry:
     address: nacos://127.0.0.1:8848
+    #集群模式
+    #address: nacos://127.0.0.1:8848?backup=127.0.0.1:8849,127.0.0.1:8850
   application:
     name: nacos-dubbo-provider
   scan:
